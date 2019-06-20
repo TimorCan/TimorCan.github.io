@@ -6,19 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://timorcan.github.io">
-  <title>my-second-blog | Jax的博客</title>
+  <title>macOS 开发 - 使用 最新版本Sparkle 进行自更新 | Jax的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="jax的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="my-second-blog">
-<meta property="og:url" content="https://timorcan.github.io/my-second-blog/index.html">
+  <meta name="description" content="前言macOS 开发中使用Sparkle进行自更新，目前百度搜索到的资料几乎都是老版本的，英文不太好，折腾了好久，在此记录下，写个教程方便后来人使用">
+<meta name="keywords" content="Mac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="macOS 开发 - 使用 最新版本Sparkle 进行自更新">
+<meta property="og:url" content="https://timorcan.github.io/2019/06/20/Sparkle/index.html">
 <meta property="og:site_name" content="Jax的博客">
-<meta property="og:description" content="jax的博客">
+<meta property="og:description" content="前言macOS 开发中使用Sparkle进行自更新，目前百度搜索到的资料几乎都是老版本的，英文不太好，折腾了好久，在此记录下，写个教程方便后来人使用">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-20T07:39:29.854Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-8364b274bfa514f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-df585f165c733b66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-ad812f5d7dd4e00d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-2f2933ae21dca287.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-8ad44ea0ad219e9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-2cfce8cbe3b0577a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-c48f08a62395eafa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-8f6ba8d49d9a3a29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1126761-3f1f2a977262320a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-06-20T10:37:56.012Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my-second-blog">
-<meta name="twitter:description" content="jax的博客">
+<meta name="twitter:title" content="macOS 开发 - 使用 最新版本Sparkle 进行自更新">
+<meta name="twitter:description" content="前言macOS 开发中使用Sparkle进行自更新，目前百度搜索到的资料几乎都是老版本的，英文不太好，折腾了好久，在此记录下，写个教程方便后来人使用">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1126761-8364b274bfa514f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="Jax的博客" type="application/atom+xml">
   
@@ -168,34 +179,115 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-Sparkle" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      my-second-blog
+      macOS 开发 - 使用 最新版本Sparkle 进行自更新
     </h1>
   
 
         
-        <a href="/my-second-blog/index.html" class="archive-article-date">
-  	<time datetime="2019-06-20T07:39:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-20</time>
+        <a href="/2019/06/20/Sparkle/" class="archive-article-date">
+  	<time datetime="2019-06-20T10:35:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>macOS 开发中使用<strong>Sparkle</strong>进行自更新，目前百度搜索到的资料几乎都是老版本的，英文不太好，折腾了好久，在此记录下，写个教程方便后来人使用</p>
+<a id="more"></a>
+
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><ul>
+<li>mac os High </li>
+<li>Sierra(10.13.6)<br>Xcode Version 10.1 (10B61)</li>
+<li>sparkle 1.12.3</li>
+</ul>
+<h1 id="新建MacApp"><a href="#新建MacApp" class="headerlink" title="新建MacApp"></a>新建MacApp</h1><p>新建Mac os app</p>
+<h1 id="Sparkle集成"><a href="#Sparkle集成" class="headerlink" title="Sparkle集成"></a>Sparkle集成</h1><p>推荐使用cocopods </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pod &apos;Sparkle&apos;</span><br><span class="line"></span><br><span class="line">#Using Sparkle (1.21.3)</span><br></pre></td></tr></table></figure>
+
+<h1 id="具体流程"><a href="#具体流程" class="headerlink" title="具体流程"></a>具体流程</h1><ol>
+<li>新增menuItem并连线<br><img src="https://upload-images.jianshu.io/upload_images/1126761-8364b274bfa514f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="自动更新连线"></li>
+<li>打开pod文件夹如图位置<br><img src="https://upload-images.jianshu.io/upload_images/1126761-df585f165c733b66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2019-03-11 上午9.36.18.png"></li>
+<li>生成key并填入程序info.plist【访问钥匙串需要同意权限】</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">##进入bin目录后</span><br><span class="line">lm-majinlideMacBook-Air:bin zhoucan$ generate_keys</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/1126761-ad812f5d7dd4e00d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2019-03-11 上午9.40.45.png"></p>
+<ol start="4">
+<li>用python开启本地文件夹服务器<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">python -m http.server 或者 </span><br><span class="line">python -m SimpleHTTPServer</span><br><span class="line"></span><br><span class="line">默认开启http://0.0.0.0:8000/</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p><img src="https://upload-images.jianshu.io/upload_images/1126761-2f2933ae21dca287.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="http://0.0.0.0:8000/已开启"><br>4.1 提前设置【SUFeedURL <a href="http://0.0.0.0:8000/MacApp.xml】在info.plist添加更新网址，并打开ATS" target="_blank" rel="noopener">http://0.0.0.0:8000/MacApp.xml】在info.plist添加更新网址，并打开ATS</a> {本地是http，所以还是打开吧}</p>
+<ol start="5">
+<li><p>把Mac App修改verison和build 改到2.0版本并打包导出 MacApp.app</p>
+</li>
+<li><p>压缩MacApp.zip</p>
+</li>
+<li><p>签名并生成appcast.xml<br><img src="https://upload-images.jianshu.io/upload_images/1126761-8ad44ea0ad219e9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="签名生成xml"></p>
+</li>
+<li><p>xml文件和zip移动至如图所示位置<br><img src="https://upload-images.jianshu.io/upload_images/1126761-2cfce8cbe3b0577a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="本地文件夹服务器"><br>以下是MacApp.xml的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;&lt;rss xmlns:sparkle=&quot;http://www.andymatuschak.org/xml-namespaces/sparkle&quot; version=&quot;2.0&quot;&gt;</span><br><span class="line">&lt;channel&gt;</span><br><span class="line">&lt;title&gt;MacApp&lt;/title&gt;</span><br><span class="line">&lt;item&gt;</span><br><span class="line">&lt;title&gt;2.0&lt;/title&gt;</span><br><span class="line">&lt;pubDate&gt;周一, 11 3月 2019 09:44:51 +0800&lt;/pubDate&gt;</span><br><span class="line">&lt;sparkle:minimumSystemVersion&gt;10.13&lt;/sparkle:minimumSystemVersion&gt;</span><br><span class="line">&lt;enclosure url=&quot;http://0.0.0.0:8000/MacApp.zip&quot; sparkle:version=&quot;2.0&quot; sparkle:shortVersionString=&quot;2.0&quot; length=&quot;5056434&quot; type=&quot;application/octet-stream&quot; sparkle:edSignature=&quot;BT7y5cdBzgElBgkFrFQdBEjmT+fyaeWV0WTCILLcWCTLRzLwzZVONUA/uBKgsn/qKOtFCKaF9a7O7v9nBiJxDg==&quot;/&gt;</span><br><span class="line">&lt;/item&gt;</span><br><span class="line">&lt;/channel&gt;&lt;/rss&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查更新<br><img src="https://upload-images.jianshu.io/upload_images/1126761-c48f08a62395eafa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="手动更新"></p>
+</li>
+<li><p>打开就检查有没有新版本<br><img src="https://upload-images.jianshu.io/upload_images/1126761-8f6ba8d49d9a3a29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码更新"></p>
+</li>
+<li><p>基本成功<br><img src="https://upload-images.jianshu.io/upload_images/1126761-3f1f2a977262320a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="弹出更新"></p>
+</li>
+</ol>
+<h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>如果有什么问题，可以私信我交流。<br>当然你可以把更新链接和打包的zip文件放在github上，有自己服务器更好。</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat_pay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Mac</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -246,7 +338,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://timorcan.github.io/my-second-blog/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://timorcan.github.io/2019/06/20/Sparkle/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -258,6 +350,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2019/06/20/Atlas安装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Atlas安装</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -332,7 +434,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
